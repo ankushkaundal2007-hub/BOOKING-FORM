@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMMER TRAVELLERS</title>
+    <style>
+        <style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #fff);
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    color: #00796b;
+    margin-top: 30px;
+  }
+
+  h2 {
+    color: #004d40;
+    text-align: center;
+    border-bottom: 2px solid #00796b;
+    padding-bottom: 5px;
+  }
+
+  form {
+    width: 400px;
+    text-align: center;
+    background: #f9f9f9;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  input[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #004d40;
+    transform: scale(1.02);
+  }
+
+  /* spacing between sections */
+  div {
+    margin-bottom: 20px;
+  }
+
+
+    </style>
+</head>
+<body>
+    <h1>TRAVEL BOOKING FORM</h1>
+    <h2>PERSONAL INFORMATION</h2>
+    <form action="stand.php">
+        <div>
+            <label for="name">full name</label>
+            <input id="name" type="text" placeholder="enter your name here" ></input><br>
+            <label for="tel">phone number</label>
+            <input id="tel" type="tel" placeholder="enter your phone number"></input><br>
+            <label for="email">Email Id</label>
+            <input id="email" type="email" placeholder="enter your mail id"></input><br>
+        </div>
+        <H2>TRAVEL DETAILS</H2>
+        <div>
+            <label for="depart">Departure city</label>
+            <input id="depart" type="text" placeholder="enter city name"></input><br>
+            <label="dest">Destination city</label>
+            <input id="dest" type="text" placeholder="enter city name"></input><br>
+            <label for="date">Date of Departure</label>
+            <input id="date" type="date" ></input><br>
+            <label for="return">Return date</label>
+            <input id="return" type="date" ></input><br>
+            <label for="number">Number of Travellers</label>
+            <select id="number" REQUIRED>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>MORE THAN 4</option>
+            </select><br>
+            <label for="class">Travel class</label><br>
+            <input id="class" type ="radio">FIRST</INPUT>
+            <INPUT ID="class" type="radio">BUSSINESS</input>
+          <INPUT ID="class" type="radio">ECONOMY</input>
+        </div>
+        <H2>PAYMENT SECTION</H2>
+        <div>
+            <label for="holder name">Cardholder name</label>
+            <input id="holder name" type="text" placeholder="enter name" required><br>
+            <label for="card">Card-number</label>
+            <input id="card" type="text" inputmode="numeric" placeholder="enter the number"><br>
+            <label for="expiry">Expiry</label>
+            <input id="expiry" type="date"><br>
+            <label for="cvv">CVV</label>
+            <input id="cvv" type="password" inputmode="numeric" maxlength="4" required placeholder="CVV"><br>
+        </div>
+        <br>
+        <div>
+        <input type="submit" placeholder="book now">
+        </div>
+    </form>
+</body>
+</html>
